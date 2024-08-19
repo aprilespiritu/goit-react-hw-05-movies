@@ -1,0 +1,19 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    padding-left: 24px;
+}
+
+.link {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 2px 8px;
+}
+
+.link:hover,
+.link:focus {
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
