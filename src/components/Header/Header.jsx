@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { Suspense } from 'react';
 import Loader from "components/Loader/Loader";
+import { Footer } from "components/Footer/Footer";
 import css from './Header.module.css';
 
 const Header = () => {
@@ -25,6 +26,7 @@ const Header = () => {
             <Suspense fallback={<Loader />}>
                 <Outlet />
             </Suspense>
+            <Footer/>
         </>
     );
 };
