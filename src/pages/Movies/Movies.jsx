@@ -36,5 +36,40 @@ const Movies = () => {
         getMovies();
     }, [searchParams]);
 
-    const handlePreviousClick
-}
+    const handlePreviousClick = e => {
+        setSearchParams(prev => ({
+            query: prev.get('query'),
+            page: parseInt(prev.get('page')) - 1,
+        }));
+    };
+
+    const handleNextClick = e => {
+        setSearchParams(prev => ({
+            query: prev.get('query'),
+            page: parseInt(prev.get('page')) + 1,
+        }));
+    };
+
+    return (
+        <section className="container">
+            <SearchMovieForm />
+            {loading && <Loader />}
+            {movies.length > 0 && <MovieList movies={movies} />}
+            {error !== null && <Error message={error.message} />}
+            <div className={css.nav}>
+                {searchParams.get('page') > 1 && (
+                    <button className={css.button} onClick={handlePreviousClick}>
+                        &#60
+                    </button>
+                )}
+                {!lastPage && (
+                    <button className={css.button} onClick={handleNextClick}>
+                        &#62
+                    </button>
+                )}
+            </div>
+        </section>
+    );
+};
+
+export default Movies;
