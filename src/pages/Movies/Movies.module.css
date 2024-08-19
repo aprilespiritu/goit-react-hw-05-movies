@@ -1,0 +1,14 @@
+.button {
+    margin-top: 24px;
+    font-size: 20px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: none;
+    color: whitesmoke;
+    background-color: #1560bd;
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+}
