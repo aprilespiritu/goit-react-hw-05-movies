@@ -2,6 +2,7 @@ import { getTrending } from "services/tmbdAPI";
 import { useEffect, useState } from "react";
 import Loader from "components/Loader/Loader";
 import MovieList from "components/MovieList/MovieList";
+import Error from "components/Error/Error";
 import css from './Home.module.css';
 
 const Home = () => {
