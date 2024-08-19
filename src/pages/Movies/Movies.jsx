@@ -2,6 +2,7 @@ import { getSearchMovies } from "services/tmbdAPI";
 import Loader from "components/Loader/Loader";
 import Error from "components/Error/Error";
 import MovieList from "components/MovieList/MovieList";
+import SearchMovieForm from "components/SearchMovieForm/SearchMovieForm";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
