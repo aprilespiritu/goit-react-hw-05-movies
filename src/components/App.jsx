@@ -6,7 +6,7 @@ import CastPage from 'pages/CastPage/CastPage';
 import ReviewsPage from 'pages/ReviewsPage/ReviewsPage';
 import Movies from 'pages/Movies/Movies';
 
-import Home = lazy(() => import('pages/Home/Home'));
+const Home = lazy(() => import('../pages/Home/Home'));
 
 const App = () => {
   return (
