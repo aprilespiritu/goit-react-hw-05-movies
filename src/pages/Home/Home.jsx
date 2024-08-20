@@ -32,7 +32,7 @@ const Home = () => {
         <section className={`container ${css.section}`}>
             <h1 className={css.title}>Trending Movies Today</h1>
             {loading && <Loader />}
-            {movie.length > 0 && <MovieList movies={movies} />}
+            {movies.length > 0 && <MovieList movies={movies} />}
             {error !== null && <Error message={error.message} />}
         </section>
     );

@@ -8,7 +8,7 @@ import Reviews from "components/Reviews/Reviews";
 const ReviewsPage = () => {
     const [reviews, setReviews] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [error, settError] = useState(null);
+    const [error, setError] = useState(null);
     const { movieId } = useParams();
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const ReviewsPage = () => {
         const getMovies = async () => {
             try {
                 setLoading(true);
-                settError(null);
+                setError(null);
                 const data = await getMovieReviews(movieId);
                 setReviews(data.results);
             } catch (error) {

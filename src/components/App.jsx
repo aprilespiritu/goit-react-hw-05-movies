@@ -1,10 +1,10 @@
 import { Link, Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 import Header from './Header/Header';
-import MovieDetailsPage from 'pages/MovieDetailsPage/MovieDetailsPage';
-import CastPage from 'pages/CastPage/CastPage';
-import ReviewsPage from 'pages/ReviewsPage/ReviewsPage';
-import Movies from 'pages/Movies/Movies';
+import MovieDetailsPage from '../pages/MovieDetailsPage/MovieDetailsPage';
+import CastPage from '../pages/CastPage/CastPage';
+import ReviewsPage from '../pages/ReviewsPage/ReviewsPage';
+import Movies from '../pages/Movies/Movies';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 
