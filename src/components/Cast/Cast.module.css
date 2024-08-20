@@ -1,0 +1,15 @@
+.section {
+    margin-top: 32px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 16px
+}
+
+.card {
+    flex-basis: 190px;
+}
