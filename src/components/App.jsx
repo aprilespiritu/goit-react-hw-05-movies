@@ -8,7 +8,7 @@ import Movies from '../pages/Movies/Movies';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 
-const App = () => {
+export const App = () => {
   return (
     <>
       <Routes>
@@ -35,4 +35,4 @@ const App = () => {
   );
 };
 
-export default App;
+//export default App;
