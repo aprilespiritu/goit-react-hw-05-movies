@@ -20,7 +20,7 @@ const Cast = ({ cast }) => {
                                     alt="poster"
                                 />
                                 <h4>{name}</h4>
-                                <p>Character: {character}</p>
+                                <p>as {character}</p>
                             </li>
                         );
                     })}
