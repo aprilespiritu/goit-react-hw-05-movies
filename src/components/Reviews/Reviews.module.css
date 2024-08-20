@@ -1,0 +1,15 @@
+.section {
+    margin-top: 24px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text {
+    margin-top: 12px;
+    margin-left: 24px;
+}
