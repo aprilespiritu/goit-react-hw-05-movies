@@ -11,7 +11,7 @@ const MovieDetails = ({ details }) => {
     return (
         <section class={`container ${css.section}`}>
             <Link className={css['back-link']} to={backLink}>
-                <HiArrowNarrowLeft size={16}/> Go Back
+                <HiArrowNarrowLeft size={16} /> Go Back
             </Link>
             <div class={css['movie-details']}>
                 <img
@@ -38,10 +38,20 @@ const MovieDetails = ({ details }) => {
             <h3 className={css['add-info']}>Additional Information</h3>
             <ul className={css['add-list']}>
                 <li>
-                    
+                    <NavLink className={css['add-link']} to="cast" state={{ from: backLink }}>
+                        Cast
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className={css['add-link']} to="reviews" state={{ from: backLink }}>
+                        Reviews
+                    </NavLink>
                 </li>
             </ul>
+            <hr />
+            <Outlet />
         </section>
-        }
-    )
-}
+    );
+};
+
+export default MovieDetails;
