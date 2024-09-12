@@ -61,12 +61,12 @@ const Movies = () => {
             <div className={css.nav}>
                 {searchParams.get('page') > 1 && (
                     <button className={css.button} onClick={handlePreviousClick}>
-                        &#60
+                        {<>&#60;</>}
                     </button>
                 )}
                 {!lastPage && (
                     <button className={css.button} onClick={handleNextClick}>
-                        &#62
+                        {<>&#62;</>}
                     </button>
                 )}
             </div>
